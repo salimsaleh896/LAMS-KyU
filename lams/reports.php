@@ -9,12 +9,11 @@ check_login();
 
 $reports_err = "";
 
-// The database link ($link) is assumed to be set up in db_config.php
 
 // --- START OF HTML OUTPUT ---
 include 'includes/header.php'; // This opens the <body> tag
 
-// We are now inside the main content wrapper (from header.php)
+// main content wrapper (from header.php)
 ?>
 
 <h2 class="page-title">Inventory Reports</h2>
