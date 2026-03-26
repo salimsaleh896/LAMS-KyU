@@ -15,7 +15,7 @@ $value = 0.00;
 $asset_name_err = $serial_number_err = $status_err = $general_err = '';
 $success_msg = '';
 
-// --- FETCH DROPDOWN DATA (Using your functions) ---
+// --- FETCH DROPDOWN DATA---
 $categories = fetch_dropdown_data($link, 'categories', 'category_id', 'category_name');
 $locations = fetch_dropdown_data($link, 'locations', 'location_id', 'location_name');
 
@@ -106,7 +106,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 
 // --- 4. RELOAD DATA AFTER POST OR FOR INITIAL GET REQUEST ---
-// Only runs if $asset_id is valid
+
 if (!empty($asset_id)) {
     $sql = "SELECT * FROM assets WHERE asset_id = ?";
     if ($stmt = mysqli_prepare($link, $sql)) {
