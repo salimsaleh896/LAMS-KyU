@@ -1,10 +1,8 @@
 <?php
-// Include the database configuration file
 require_once 'includes/db_config.php';
-// Include the header (which starts the session)
 include 'includes/header.php';
 
-// Check if the connection link is active (for testing purposes)
+// Check if the connection link is active
 if ($link) {
     $db_status = "Successfully connected to the MySQL database!";
 } else {
