@@ -37,9 +37,8 @@ $total_value = number_format($data_value['total_value'] ?? 0, 0);
 
 include 'includes/header.php';
 
-// --- START OF DISPLAY (HTML & PHP) ---
 
-// FIX: Safely retrieve session data (fixes the 'Undefined array key' warnings)
+// retrieve session data
 $displayed_username = htmlspecialchars($_SESSION["username"] ?? 'ADMIN');
 $displayed_role = htmlspecialchars($_SESSION["role"] ?? 'Manager');
 
@@ -55,7 +54,7 @@ echo '<strong>' . $displayed_role . '</strong>.';
 echo '</p>';
 
 
-// --- KPI GRID (Now with clickable links) ---
+// --- KPI GRID 
 echo '<div class="kpi-grid">
     
     <a href="assets.php" class="kpi-link">
