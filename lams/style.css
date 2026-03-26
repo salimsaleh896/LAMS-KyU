@@ -75,18 +75,12 @@ body {
 }
 
 .welcome-box {
-    /* Ensures the box doesn't hug the edges of the page content */
-    padding: 20px;
-    /* Adds a light gray background for visual separation */
-    background-color: #f9f9f9;
-    /* Adds a light border */
-    border: 1px solid #eee;
-    /* Rounds the corners slightly */
-    border-radius: 5px;
-    /* Adds space below the welcome box before the next content */
-    margin-bottom: 25px;
-    /* Ensures the font is easy to read */
-    font-size: 1.1em;
+        padding: 20px;
+       background-color: #f9f9f9;
+      border: 1px solid #eee;
+      border-radius: 5px;
+      margin-bottom: 25px;
+     font-size: 1.1em;
 }
 
 .welcome-box p {
